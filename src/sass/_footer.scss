@@ -1,12 +1,12 @@
 @use 'colors' as *;
 .footer {
 	.attribution {
-		font-family: var(--regular--light-font);
+		font-family: var(--regular-font);
 		padding: 2em;
 		text-align: center;
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		&__link {
-			color: hsl(228, 44%, 28%);
+			color: hsl(228, 38%, 45%);
 			text-decoration: none;
 			cursor: pointer;
 		}
