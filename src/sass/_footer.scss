@@ -6,7 +6,8 @@
 		text-align: center;
 		font-size: 0.8rem;
 		&__link {
-			color: hsl(228, 38%, 45%);
+			color: black;
+			font-family: var(--extra-bold-font);
 			text-decoration: none;
 			cursor: pointer;
 		}
