@@ -3,8 +3,8 @@
 @use 'footer' as *;
 
 :root {
+	--light-font: 'poppinslight', sans-serif;
 	--regular-font: 'poppins', sans-serif;
-	--bold-font: 'poppinslight', sans-serif;
 	--extra-bold-font: 'poppinsbold', sans-serif;
 }
 
@@ -61,31 +61,32 @@
 	&__text {
 		display: grid;
 		grid-row: 1/2;
-		font-family: var(--regular-font);
+		font-family: var(--light-font);
+		color: $text-color;
 		font-size: 1rem;
-		color: $text-lightcolor;
+		// color: $text-lightcolor;
 	}
 	&__title {
 		display: grid;
 		grid-row: 2/3;
 		font-family: var(--extra-bold-font);
 		font-size: 1.1rem;
-		margin-top: .2em;
+		margin-top: 0.2em;
 	}
 	&__description {
 		display: grid;
 		grid-row: 3 / 4;
-		font-family: var(--regular-font);
+		font-family: var(--light-font);
 		font-size: 1rem;
 		color: $text-lightcolor;
 		padding-top: 1.5em;
 		line-height: 1.5em;
-			}
+	}
 }
 
 .title {
 	padding: 1.5em 1.5em 0 1.5em;
-	font-family: var(--bold-font);
+	font-family: var(--extra-bold-font);
 	color: $text-color;
 	font-size: 1.1rem;
 }
@@ -127,7 +128,7 @@
 	&-description {
 		padding: 0.5em 2em;
 		font-family: var(--regular-font);
-		font-size: .8rem;
+		font-size: 0.8rem;
 		line-height: 1.5em;
 	}
 	&-img {
