@@ -1,0 +1,29 @@
+@use 'colors' as *;
+.footer {
+	.attribution {
+		font-family: var(--regular-font);
+		padding: 2em;
+		text-align: center;
+		font-size: 0.7rem;
+		font-weight: bold;
+		&__link {
+			color: hsl(228, 45%, 44%);
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
+
+@media (min-width: 62em) {
+	.footer {
+		position: relative;
+		height:4em;
+        width: 100%;
+		bottom: 0;
+		.attribution {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
+}
