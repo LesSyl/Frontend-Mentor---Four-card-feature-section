@@ -174,20 +174,19 @@
 		display: grid;
 		grid-template-columns: 100%;
 		grid-template-columns: repeat(3, 1fr);
-		// margin: 4em;
 	}
 
 	.section-one {
-		animation: left 1.5s;
+		animation: left 1s cubic-bezier(0.3,0.2,0.2,1);
 	}
 	.section-two {
-		animation: right 2s;
+		animation: right 1.5s cubic-bezier(0.3,0.2,0.2,1);
 	}
 	.section-three {
-		animation: left 3s;
+		animation: left 2s cubic-bezier(0.3,0.2,0.2,1);
 	}
 	.section-four {
-		animation: right 4s;
+		animation: right 2.5s cubic-bezier(0.3,0.2,0.2,1);
 	}
 
 	@keyframes left {
@@ -262,16 +261,16 @@
 		}
 	}
 	.section-one {
-		animation: right 2s;
+		animation: right 2s ease-out;
 	}
 	.section-two {
-		animation: down 2s;
+		animation: down 2s ease-out;
 	}
 	.section-three {
-		animation: up 2s;
+		animation: up 2s ease-out;
 	}
 	.section-four {
-		animation: left 2s;
+		animation: left 2s ease-out;
 	}
 
 	@keyframes down {
